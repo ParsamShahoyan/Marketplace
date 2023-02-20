@@ -1,11 +1,9 @@
-import Header  from '../Header/Header'
-import ProductSheet  from '../ProductSheet/ProductSheet'
-import Sidebar  from '../Sidebar/Sidebar'
+import Nav from '../Nav/Nav'
+import { Outlet } from 'react-router-dom'
 const Home = () => {
     return(<>
-        <Header/>
-        <Sidebar/>
-        <ProductSheet/>
+        <Nav />
+        <Outlet/>
     </>)
 }
 export default Home

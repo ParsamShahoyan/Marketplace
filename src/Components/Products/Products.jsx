@@ -3,7 +3,7 @@ import './styleProducts.scss'
 import { SlBasket } from 'react-icons/sl'
 import { useNavigate } from "react-router-dom"
 import { useDispatch } from "react-redux"
-import { addToBasket } from "../../store/slices/basketSlice"
+import { addToBasket } from "../../store/slices/basketSlice/basketSlice"
 
 const Products = ({ID,
     img,
@@ -15,8 +15,23 @@ const Products = ({ID,
     camera,
     battery,
     weight}) => {
+
         const navigate = useNavigate()
         const dispatch = useDispatch()
+
+        const addBasket = () => {
+            dispatch(addToBasket({ID,
+                img,
+                price,
+                model,
+                ram,
+                memory,
+                screenType,
+                camera,
+                battery,
+                weight
+            }))
+        }
         return(
             <div   className="product">
                 <img onClick={() => navigate("uniq/" + ID)} src={img} alt="" />
@@ -24,7 +39,7 @@ const Products = ({ID,
                 <h3 className="price">{price} $</h3>
                 <div className="stars_basket">
                     <Stars/>
-                    <SlBasket onClick={() => dispatch(addToBasket(ID))} className="basket"/>
+                    <SlBasket onClick={addBasket} className="basket"/>
                 </div>
             </div>
         )
