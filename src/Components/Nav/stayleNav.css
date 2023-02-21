@@ -1,23 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     text-align: center;
-    
+    position: fixed;
+    background-color: rgb(190, 225, 255);
+    grid-column: 1 / -1;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 6;    
 }
 a{
     text-decoration: none;
     font-size: 1.2em;
     font-family: sans-serif;
-    color: black;
+    color: #222;
 }
 .boo{
-    /* background-color: aliceblue; */
     position: relative;
+    font-size: 1.9em;
+    
 }
-span{
+.boo:hover{
+    color: #878585;
+}
+
+.nav_span{
+    font-size: 0.7em;
     color: rgb(216, 0, 0);
-    background-color: aliceblue;
-    border-radius: 25%;
     position: absolute;
+    left: 57%;
+    bottom: 50%;
 }

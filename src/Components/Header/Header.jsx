@@ -16,7 +16,7 @@ const Header = () => {
           <h1>A Galery</h1>
           <h1>Of The</h1>
           <h1>Foto</h1>
-          <p>Fotonjlknkjnjlnjlnjlnljnljnjln</p>
+          <p>Lorem ipsum dolor sit</p>
         </div>
         <img src={img1} alt="" />
         <img src={img2} alt="" />

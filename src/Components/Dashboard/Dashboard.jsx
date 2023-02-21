@@ -8,8 +8,10 @@ const Dashboard = () => {
   return (
     <>
         <Header/>
-        <Sidebar/>
-        <ProductSheet/>
+        <div style={{display: 'flex', margin:' 30px 5%'}} className="di">
+          <Sidebar/>
+          <ProductSheet/>
+        </div>
         <Footer/>
     </>
   )

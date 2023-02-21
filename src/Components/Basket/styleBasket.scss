@@ -1,0 +1,29 @@
+.basket_container{
+    width: 60vw;
+    margin: 60px auto;
+    .basket_Item{
+        background-color: rgb(227, 225, 225);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        img{
+            width: 100px;
+        }
+        h3{
+
+        }
+        span{
+
+        }
+        .x{
+            width: 30px;
+            height: 30px;
+            background-color: #222;
+            border: 0;
+            border-radius: 50%;
+            color: white;
+            font-weight: 900;
+            cursor: pointer;
+        }
+    }
+}

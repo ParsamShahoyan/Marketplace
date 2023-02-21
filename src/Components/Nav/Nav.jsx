@@ -12,11 +12,10 @@ const Nav = () => {
     <nav>
         <Link to='/'>Home</Link>
         <Link to='/'>Products</Link>
-        <Link to='/'>Services</Link>
         <Link to='/'>Contact</Link>
         <Link className='boo' to='basket' >
           <SlBasket/>
-          <span>{basket.length}</span>
+          <span className='nav_span'>{basket.length}</span>
         </Link>
     </nav>
   )

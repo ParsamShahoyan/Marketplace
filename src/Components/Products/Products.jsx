@@ -14,7 +14,9 @@ const Products = ({ID,
     screenType,
     camera,
     battery,
-    weight}) => {
+    weight,
+    count
+    }) => {
 
         const navigate = useNavigate()
         const dispatch = useDispatch()
@@ -29,11 +31,12 @@ const Products = ({ID,
                 screenType,
                 camera,
                 battery,
-                weight
+                weight,
+                count,
             }))
         }
         return(
-            <div   className="product">
+            <div className="product">
                 <img onClick={() => navigate("uniq/" + ID)} src={img} alt="" />
                 <h3 className="model">{model}</h3>
                 <h3 className="price">{price} $</h3>

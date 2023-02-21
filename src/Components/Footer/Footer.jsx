@@ -2,7 +2,7 @@ import React from 'react'
 import { BiArrowToTop } from 'react-icons/bi'
 
 const Footer = () => {
-  const scrollToTop = () =>{
+  function scrollToTop (){
     window.scroll({
       top:0,
       behavior:'smooth'

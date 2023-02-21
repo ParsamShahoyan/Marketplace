@@ -2,6 +2,7 @@ import React from 'react'
 import {v4} from 'uuid'
 import Products from '../Products/Products'
 import { phoneData } from "../../Data/script"
+import "./style.scss"
 
 const ProductSheet = () => {
   return (

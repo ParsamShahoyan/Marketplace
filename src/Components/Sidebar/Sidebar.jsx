@@ -1,8 +1,10 @@
 import React from 'react'
+import './styleSidbar.scss'
 const Sidebar = () => {
   return (
-    <aside>Sidebar
+    <aside>Search
         <input type="text" />
+        <input  type="range" />     
     </aside>
   )
 }

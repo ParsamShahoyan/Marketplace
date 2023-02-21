@@ -1,0 +1,15 @@
+aside{
+    // background-color: rgb(209, 209, 209);
+    position: sticky;
+    z-index: 1;
+    top: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input{
+        line-height: 20px;
+    }
+    
+    
+}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { phoneData } from '../../Data/script'
+import Footer from '../Footer/Footer'
 import Stars from '../Stars/Stars'
 import './styleUniq.scss'
 
@@ -11,22 +12,37 @@ const Uniq = () => {
     useEffect(() => {
             setPost(phoneData.find((el) => el.ID === id) );
         },[])
-  return (<div className='uniq_'>
-        <div>
+  return (
+    <div className='uniq'>
+        <div className='uniq_l'>
             <h1>{post?.model}</h1>
             <h3>{post?.price} $</h3>
             <img src={post?.img} alt="" />
             <Stars/>
         </div>
-        <div>
-            <span className='left'>Battery <p  className="rigth">{post?.battery}</p></span>
-            <span className='left'>Camera <p  className="rigth">{post?.camera}</p></span>
-            <span className='left'>Memory <p  className="rigth">{post?.memory}</p></span>
-            <span className='left'>Ram <p  className="rigth">{post?.ram}</p></span>
-            <span className='left'>ScreenType <p  className="rigth">{post?.screenType}</p></span>
-            <span className='left'>Weight <p  className="rigth">{post?.weight}</p></span>
+        <div className='uniq_r'>
+            <span>Battery 
+                <p>{post?.battery}</p>
+            </span>
+            <span>Camera 
+                <p>{post?.camera}</p>
+            </span>
+            <span>Memory 
+                <p>{post?.memory}</p> 
+            </span>
+            <span>Ram 
+                <p>{post?.ram}</p>
+            </span>
+            <span>ScreenType 
+                <p>{post?.screenType}</p>
+            </span>
+            <span>Weight 
+                <p>{post?.weight}</p>
+            </span>
             <button className='back' onClick={()=> navigate(-1)}>back</button>
         </div> 
-  </div>)
+        <Footer/>
+    </div>
+  )
 }
 export default Uniq
