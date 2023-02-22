@@ -1,12 +1,24 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { decrement, increment } from '../../store/slices/basketSlice/basketSlice'
 import './styleCounter.scss'
 
-const Cpunter = ({count}) => {
+const Cpunter = ({id, count, price}) => {
+  const dispatch = useDispatch()
+
+  const inc = () => {
+    dispatch(increment(id))
+  }
+  const dec = () => {
+    dispatch(decrement({id, price}))
+  }
+
   return (
     <div className='counter'>
-      <button>+</button>
+      <button onClick={dec} >-</button>
       <span>{count}</span>
-      <button>-</button>
+      <button onClick={inc} >+</button>
+      <span className='dollar'>{price} $</span>
     </div>
   )
 }

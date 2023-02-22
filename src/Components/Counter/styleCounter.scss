@@ -1,16 +1,26 @@
 .counter{
     height: fit-content;
+    // margin: 40px auto;
+
     button{
-        width: 20px;
-        height: 20px;
+        width: 28px;
+        height: 28px;
         background-color: #1B74E4;
         border: 0;
         border-radius: 50%;
         color: white;
         font-weight: 900;
         cursor: pointer;
+        
     }
     span{
         font-family: sans-serif;
+        margin: auto 10px;
+        color: #222
     };
+    .dollar{
+        margin-left: 20px;
+        font-weight: 800;
+        color: #222;
+    }
 }

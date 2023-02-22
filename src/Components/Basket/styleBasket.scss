@@ -2,19 +2,27 @@
     width: 60vw;
     margin: 60px auto;
     .basket_Item{
+        margin: 10px;
         background-color: rgb(227, 225, 225);
+        border-radius: 20px;
+        padding: 9px;
+        max-width: 600px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        position: relative;
 
-        img{
-            width: 100px;
+        div{
+            text-align: center;
+            img{
+                width: 100px;
+            }
+            h3{
+               font-family: sans-serif;
+               color: #222;
+            }
         }
-        h3{
-
-        }
-        span{
-
-        }
+        
         .x{
             width: 30px;
             height: 30px;
@@ -24,6 +32,17 @@
             color: white;
             font-weight: 900;
             cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            &:hover{
+                background-color: black;
+            }
         }
+    }
+    h2{
+        font-family: sans-serif;
+        color: #222;
+        margin-top: 20px;
     }
 }

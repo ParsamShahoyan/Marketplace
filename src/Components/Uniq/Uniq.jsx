@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { phoneData } from '../../Data/script'
-import Footer from '../Footer/Footer'
 import Stars from '../Stars/Stars'
 import './styleUniq.scss'
 
@@ -41,7 +40,6 @@ const Uniq = () => {
             </span>
             <button className='back' onClick={()=> navigate(-1)}>back</button>
         </div> 
-        <Footer/>
     </div>
   )
 }
