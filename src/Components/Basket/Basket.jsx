@@ -15,7 +15,6 @@ const Basket = () => {
     dispatch(delItem(e.target.id))
   }
   
- 
   return (
     <div className='basket_container'>
         {
